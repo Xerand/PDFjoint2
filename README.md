@@ -6,4 +6,5 @@ Join PDF:
 2) Place them in the folder that contains PDFjoint.exe
 3) Start PDFjoint.exe
 
-Remove limitations: Insert the name of the file to unlock
+Remove limitations: 
+Insert the name of the file to unlock
