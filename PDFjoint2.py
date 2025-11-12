@@ -1,6 +1,7 @@
 import pikepdf
 from os import *
 import datetime
+import signal
 
 
 viola = "\033[35m"
@@ -8,7 +9,14 @@ giallo = "\033[33m"
 ciano = "\033[96m"
 rosso = "\033[31m"
 reset = "\033[0m"
- 
+
+def handler(sig, frame):
+    print("\n\n[!] Quit...")
+    exit(0)
+
+# collega SIGINT (Ctrl+C) alla funzione handler
+signal.signal(signal.SIGINT, handler)
+
 def Banner():
     banner = f"""{viola}
                                                               ____
